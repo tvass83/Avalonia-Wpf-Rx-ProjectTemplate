@@ -13,7 +13,9 @@ namespace AvaloniaApp
         // Avalonia configuration, don't remove; also used by visual designer.
         public static AppBuilder BuildAvaloniaApp()
             => AppBuilder.Configure<App>()
-                .UsePlatformDetect()
+                //Better to be more specific instead of using UsePlatformDetect()
+                .UseWin32() // or UseAvaloniaNative() or UseX11()
+                .UseDirect2D1() //or UseSkia()
                 .LogToTrace();
     }
 }
