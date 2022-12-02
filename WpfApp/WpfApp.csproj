@@ -1,4 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+    <!-- Enable the section below to use the new dotnet WPF variant and don't forget to remove:
+           1) the .NET Framework references
+           2) the ItemGroup containing ApplicationDefinition & Page -->
+
+    <!--<PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <TargetFramework>net6.0-windows</TargetFramework>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>-->
+
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
         <PlatformTarget>AnyCPU</PlatformTarget>
