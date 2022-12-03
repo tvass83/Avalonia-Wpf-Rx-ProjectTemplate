@@ -1,39 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-    <!-- Enable the section below to use the new dotnet WPF variant and don't forget to remove:
-           1) the .NET Framework references
-           2) the ItemGroup containing ApplicationDefinition & Page -->
-
-    <!--<PropertyGroup>
-        <OutputType>WinExe</OutputType>
-        <PlatformTarget>AnyCPU</PlatformTarget>
-        <TargetFramework>net6.0-windows</TargetFramework>
-        <UseWPF>true</UseWPF>
-    </PropertyGroup>-->
-
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
         <PlatformTarget>AnyCPU</PlatformTarget>
-        <TargetFramework>net472</TargetFramework>
+        <TargetFrameworks>net472;net6.0-windows</TargetFrameworks>
+        <UseWPF>true</UseWPF>
     </PropertyGroup>
-
-    <ItemGroup>
-        <ApplicationDefinition Include="App.xaml" />
-        <Page Include="MainWindow.xaml" />
-    </ItemGroup>
 
     <PropertyGroup>
         <ReactiveUIVersion>13.2.10</ReactiveUIVersion>
     </PropertyGroup>
-
-    <ItemGroup>
-        <Reference Include="PresentationCore" />
-        <Reference Include="PresentationFramework" />
-        <Reference Include="System" />
-        <Reference Include="System.Xaml" />
-        <Reference Include="System.Xml" />
-        <Reference Include="System.Xml.Linq" />
-        <Reference Include="WindowsBase" />
-    </ItemGroup>
 
     <ItemGroup>
         <PackageReference Include="ReactiveUI" Version="$(ReactiveUIVersion)" />
