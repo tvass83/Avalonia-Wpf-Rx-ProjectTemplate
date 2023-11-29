@@ -2,7 +2,7 @@
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
         <PlatformTarget>AnyCPU</PlatformTarget>
-        <TargetFrameworks>net472;net6.0</TargetFrameworks>
+        <TargetFrameworks>net6.0</TargetFrameworks>
     </PropertyGroup>
 
     <ItemGroup>
@@ -11,7 +11,7 @@
     </ItemGroup>
 
     <PropertyGroup>
-        <AvaloniaVersion>0.10.6.17</AvaloniaVersion>
+        <AvaloniaVersion>0.10.17</AvaloniaVersion>
         <ReactiveUIVersion>13.2.10</ReactiveUIVersion>
     </PropertyGroup>
 

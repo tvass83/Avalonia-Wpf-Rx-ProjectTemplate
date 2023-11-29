@@ -15,6 +15,7 @@ namespace AvaloniaApp
             => AppBuilder.Configure<App>()
                 //Better to be more specific instead of using UsePlatformDetect()
                 .UseWin32() // or UseAvaloniaNative() or UseX11()
+                .With(new Win32PlatformOptions() { UseWindowsUIComposition = false })
                 .UseDirect2D1() //or UseSkia()
                 .LogToTrace();
     }
