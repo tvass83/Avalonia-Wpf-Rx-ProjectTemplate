@@ -2,7 +2,7 @@
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
         <PlatformTarget>AnyCPU</PlatformTarget>
-        <TargetFrameworks>net472;net6.0-windows</TargetFrameworks>
+        <TargetFrameworks>net472;net8.0-windows</TargetFrameworks>
         <UseWPF>true</UseWPF>
     </PropertyGroup>
 

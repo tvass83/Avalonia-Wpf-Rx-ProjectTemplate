@@ -11,8 +11,8 @@
     </ItemGroup>
 
     <PropertyGroup>
-        <AvaloniaVersion>0.10.22</AvaloniaVersion>
-        <ReactiveUIVersion>13.2.10</ReactiveUIVersion>
+        <AvaloniaVersion>11.2.0</AvaloniaVersion>
+        <ReactiveUIVersion>20.1.1</ReactiveUIVersion>
     </PropertyGroup>
 
     <ItemGroup>
@@ -22,7 +22,8 @@
         <PackageReference Include="Avalonia.Direct2D1" Version="$(AvaloniaVersion)" />
         <PackageReference Include="Avalonia.ReactiveUI" Version="$(AvaloniaVersion)" />
         <PackageReference Include="Avalonia.Skia" Version="$(AvaloniaVersion)" />
+        <PackageReference Include="Avalonia.Themes.Simple" Version="$(AvaloniaVersion)" />
         <PackageReference Include="ReactiveUI" Version="$(ReactiveUIVersion)" />
-        <PackageReference Include="ReactiveUI.Fody" Version="$(ReactiveUIVersion)" />
+        <PackageReference Include="ReactiveUI.Fody" Version="19.5.41" />
     </ItemGroup>
 </Project>

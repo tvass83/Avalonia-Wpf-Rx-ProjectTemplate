@@ -1,6 +1,7 @@
 using Avalonia;
+using Avalonia.ReactiveUI;
 
-namespace AvaloniaApp
+namespace Avalonia11App
 {
     static class Program
     {
@@ -12,11 +13,15 @@ namespace AvaloniaApp
 
         // Avalonia configuration, don't remove; also used by visual designer.
         public static AppBuilder BuildAvaloniaApp()
-            => AppBuilder.Configure<App>()
-                //Better to be more specific instead of using UsePlatformDetect()
-                .UseWin32() // or UseAvaloniaNative() or UseX11()
-                .With(new Win32PlatformOptions() { UseWindowsUIComposition = false })
-                .UseDirect2D1() //or UseSkia()
+           => AppBuilder.Configure<App>()
+                .UsePlatformDetect() //or .UseWin32() // or UseAvaloniaNative() or UseX11()
+              //.UseWin32()
+              //.With(new Win32PlatformOptions()
+              //{
+              //    CompositionMode = new[] { Win32CompositionMode.LowLatencyDxgiSwapChain }
+              //})
+              //.UseDirect2D1() //or UseSkia()
+                .UseReactiveUI()
                 .LogToTrace();
     }
 }

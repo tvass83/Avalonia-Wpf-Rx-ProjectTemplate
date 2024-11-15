@@ -2,7 +2,7 @@ Latest version of .vstemplate
 
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
-    <Name>WPF / ReactiveUI Project Template v1.1</Name>
+    <Name>WPF / ReactiveUI Project Template v1.2</Name>
     <Description>A basic WPF / ReactiveUI project template for quick experimentation</Description>
     <ProjectType>CSharp</ProjectType>
     <SortOrder>1000</SortOrder>
